@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "654069360542",
+    "project_id": "events-237b8",
+    "storage_bucket": "events-237b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654069360542:android:894701201ad99f3df4588f",
+        "android_client_info": {
+          "package_name": "com.ivanojok.events"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654069360542-vb7h69pmv3okp63h70ekpvjkmo588oa1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2g4zuPhAQmFwpdcFjj662ZQqLGcHUceI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654069360542-vb7h69pmv3okp63h70ekpvjkmo588oa1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

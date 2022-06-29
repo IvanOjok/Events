@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Events</string>
+
+    <string name="create">Login</string>
+    <string name="mobile">Enter mobile number with country code (e.g +25677777777)</string>
+    <string name="no">e.g +256775186930</string>
+    <string name="next">Next</string>
+    <string name="verify">Verification</string>
+    <string name="code_sent">Code has been sent to</string>
+    <string name="code">Enter code here:</string>
+
+    <string name="first">First Name</string>
+    <string name="last">Last Name</string>
+    <string name="nin">NIN</string>
+    <string name="residence">Residence</string>
+    <string name="register">Register</string>
+    <string name="service">Services</string>
+
+    <string name="event_name">Event Name</string>
+    <string name="event">Events</string>
+
+    <string name="report">Report a case</string>
+    <string name="counsel">Counselling</string>
+    <string name="account">My Account</string>
+
+    <string name="users">Users</string>
+    <string name="victim">Victims</string>
+    <string name="counsellor">Counsellor</string>
+    <string name="police">Police</string>
+    <string name="reports">Reports</string>
+
+    <string name="addC">Add Event</string>
+    <string name="addP">Add Police</string>
+    <string name="event_location">Location</string>
+    <string name="event_fee">Entry Fee</string>
+    <string name="event_description">Event Description</string>
+    <string name="event_organizer">Event Organizer</string>
+    <string name="event_time">Event Time</string>
+    <string name="event_contact">Event Contact</string>
+    <string name="phone">Phone Number (+256…)</string>
+    <string name="ent_phone">Enter Phone Number</string>
+    <string name="buy">Buy Ticket</string>
+    <string name="send">Write a message…</string>
+
+    <string name="logout">Log Out</string>
+
+    <string name="chat">Chat</string>
+    <string name="select">Select</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Tickets</string>
+    <string name="title_dashboard">Events</string>
+    <string name="title_notifications">My Account</string>
+
+    <string name="airtel">Airtel</string>
+    <string name="mtn">MTN</string>
+</resources>

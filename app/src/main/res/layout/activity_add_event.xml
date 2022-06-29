@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".admin.AddEventActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_2sdp"
+                android:src="@drawable/back"
+                app:tint="@color/bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/addC"
+                android:textColor="@color/bg"
+                android:textSize="@dimen/_23ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:tint="@color/bg"
+                    android:src="@drawable/location"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/firstLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/event_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img" />
+
+                <EditText
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/event_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/firstLayout" />
+
+                <TextView
+                    android:id="@+id/lastLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/event_location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/first" />
+
+                <EditText
+                    android:id="@+id/last"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/event_location"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/lastLayout"
+                    tools:layout_editor_absoluteX="-3dp" />
+
+                <TextView
+                    android:id="@+id/emailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/event_fee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/last" />
+
+                <EditText
+                    android:id="@+id/createEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/event_fee"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/emailLayout" />
+
+
+                <TextView
+                    android:id="@+id/courseLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/event_description"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/createEmail" />
+
+                <EditText
+                    android:id="@+id/profession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/event_description"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/courseLayout"
+                    tools:layout_editor_absoluteX="6dp" />
+
+                <TextView
+                    android:id="@+id/stdNoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/event_organizer"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/profession" />
+
+                <EditText
+                    android:id="@+id/dNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/event_organizer"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/stdNoLayout"
+                    tools:layout_editor_absoluteX="6dp" />
+
+
+                <TextView
+                    android:id="@+id/eTLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/event_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/dNo"
+                    tools:layout_editor_absoluteX="6dp" />
+
+                <EditText
+                    android:id="@+id/eTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/event_time"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/eTLayout"
+                    tools:layout_editor_absoluteX="6dp" />
+
+
+
+                <TextView
+                    android:id="@+id/pwdLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/event_contact"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/eTime"
+                    tools:layout_editor_absoluteX="6dp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/event_contact"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/pwdLayout"
+                    tools:layout_editor_absoluteX="6dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/round_bg"
+                    android:text="@string/next"
+                    android:textSize="@dimen/_18ssp"
+                    app:iconGravity="end"
+                    app:iconSize="@dimen/_30sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/add" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
